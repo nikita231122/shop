@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 100%;
+  background-color: white;
+  margin: 0;
+}
+
+/* Стили ссылок - определяют внешний вид ссылок на странице */
+
+a:link, a:visited { color: #DC6903; } /* Цвет обычных и посещенных ссылок */
+
+a:focus, a:hover, a:active { color: #F9AB33; } /* Цвет ссылок при наведении и фокусе */
+
+
+a { /* Общие стили для всех ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+  border-bottom: 1px dotted; /* Добавляем пунктирное подчеркивание */
+  padding-bottom: .2em; /* Отступ снизу */
+}
+
+
+
+
+/* Стили раздела header - определяют внешний вид заголовка страницы */
+
+header { /* Стили для заголовка */
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #162e2c; /* Цвет текста */
+  background:  url(images/banner.jpg) no-repeat center center; /* Фоновое изображение */
+  background-size: cover; /* Масштабируем фоновое изображение */
+  text-align: center; /* Выравнивание текста по центру */
+  height: 15em; /* Высота заголовка */
+}
+
+header p { /* Стили для параграфов в заголовке */
+  font-style: italic; /* Курсивный шрифт */
+  font-size: 1.2em; /* Размер шрифта */
+  margin-top: -12px; /* Отрицательный отступ сверху */
+}
+
+header h1 { /* Стили для заголовка h1 в разделе header */
+  margin-top: 1.5em; /* Отступ сверху */
+}
+
+
+
+/* Стили раздела nav - определяют внешний вид навигационного меню */
+
+nav, footer { /* Стили для навигации и подвала */
+  font-family: verdana, sans-serif; /* Шрифт */
+  background-color: #e8928a; /* Цвет фона */
+}
+
+
+nav ul li a {
+  display: block;
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  color: #25595C;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: #fff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+footer {
+  
+  text-align: center;
+  clear: left;
+}
+
+#container {
+  clear: both;
+  overflow: hidden;
+  float: left;
+  width: 55%;
+}
+
+
+/* Стили раздела main - определяют внешний вид основного контента (товаров) */
+
+#main { /* Стили для основного контента */
+  font-family: 'Stint Ultra Expanded', Georgia, serif; /* Шрифт */
+  background-color: white; /* Цвет фона */
+  line-height: 1.8em; /* Межстрочный интервал */
+  color: #555; /* Цвет текста */
+  padding: 1em; /* Отступы */
+  border: double 4px #EADDC4; /* Двойная рамка */
+  border-radius: 25px; /* Закругление углов */
+  margin: 2.5%; /* Отступы вокруг */
+
+
+
+}
+
+h3 { /* Стили для заголовков h3 в основном контенте */
+  text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+  letter-spacing: .2em; /* Межбуквенный интервал */
+  color: #7A0002; /* Цвет текста */
+  border-top: 1px solid; /* Верхняя граница */
+  border-left: 3px solid; /* Левосторонняя граница */
+  padding-left: 1em; /* Отступ слева */
+  margin-top: 2.5em; /* Отступ сверху */
+}
+
+p.more { /* Стили для параграфов с классом more */
+  font-family: verdana, sans-serif; /* Шрифт */
+  text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+  font-size: .8em; /* Размер шрифта */
+  clear: left; /* Убираем обтекание слева */
+}
+
+#main img { /* Стили для изображений в основном контенте */
+  float: left; /* Обтекание слева */
+  margin: 20px; /* Отступы вокруг изображения */
+}
+
+
+
+
+
+
+
+
+/* Стили раздела aside - определяют внешний вид боковой панели (рабочие часы) */
+
+#aside { /* Стили для боковой панели */
+  background: url(images/scallop.png) repeat-y left top; /* Фоновое изображение */
+  background-color: #F6F3ED; /* Цвет фона */
+  padding: 1em; /* Отступы */
+  padding-left: 45px; /* Отступ слева */
+  border-top-right-radius: 25px; /* Закругление верхнего правого угла */
+  margin: 1em 2.5% 0 10%; /* Отступы вокруг */
+}
+
+
+     /* стили для раздела отзывов */
+
+     #testimonials {
+      background: #dab0a8 ;
+      color: #633;
+      font-size: 0.875em;
+      line-height: 1.5;
+      padding: 1em;
+      padding-left: 55px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      margin: 1em 2% 1em 64%;
+    }
+
+    #testimonials h2 {
+      font-size: 1em;
+      text-transform: uppercase;
+      color: #db5b53;
+      letter-spacing: 3px;
+    }
+
+
+/* Остальные стили - определяют внешний вид подвала и других элементов */
+
+footer { /* Стили для подвала */
+  color: #EADDC4; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  font-size: .8em; /* Размер шрифта */
+  padding: 1em; /* Отступы */
+}
+
+
+
+h2 { /* Стили для заголовков h2 */
+  font-family: 'Stint Ultra Expanded', Georgia, serif; /* Шрифт */
+}
+
+
+
+/* CSS Document */
